@@ -1,1 +1,1 @@
-web: gunicorn taskapp-django-example.wsgi --log-file -
+web: gunicorn hello_world.wsgi --log-file -
