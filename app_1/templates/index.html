@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  <title>Index - app </title>
+{% endblock title %}
+
+{% block content %}
+<div class='container'>
+  <h1> {{ index_text }}</h1>
+  <div class="row mt-5">
+    <div class="col-lg-4">
+      <img src="{% static 'images/notes1.jpg' %}" class="rounded-lg shadow" width="400" height="300">
+    </div>
+    <div class="col-lg-4">
+        <img src="{% static 'images/notes2.jpg' %}" class="rounded-lg shadow" width="400" height="300">
+    </div>
+    <div class="col-lg-4">
+        <img src="{% static 'images/notes3.jpg' %}" class="rounded-lg shadow" width="400" height="300">
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-12 offset md-3">
+      <center><p class="text-primary h1">Quick and easy to use, Anytime, Anywhere!</p></center>
+      <center><p class="h2">Plan your day Better, Get Your life organized</p></center>
+      <center><p class="h5">TASKAPP, Let's you keep track your task</p></center>
+
+      <center><a href="{% url 'section_task' %}"<button type="button" class="btn btn-primary btn-lg mt-3">Let's get started</button></a></center>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+{% endblock content %}
